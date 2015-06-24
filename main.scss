@@ -1,0 +1,97 @@
+html { 
+  background: grey no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#navigation {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px;
+
+  .navbar {
+    margin: 0;
+    padding: 0;
+
+    .navbar-header {
+      float: left;
+      padding-right: 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+    }
+    .navbar-list {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      
+        li {
+          float: left;
+          margin: 0;
+          padding: 0 10px 0 0;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
+
+#restaurantsCollection {
+
+  .grid-container { // container
+    position: fixed;
+    top: 300px;
+    width: 100%;
+    max-width: 1280px;
+  }
+
+  .grid-container * {
+    box-sizing: border-box;
+  }
+
+  .row:before, .row:after { // rows
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  [class*='col-'] { // column
+    float: left; // to stack from left
+    min-height: 1px; // this prevants floated columns from stacking on top of each other
+    width: 25%; // aiming for four columns
+    /* spaces in grid */
+    padding: 5px;
+    background-color: #FFDCDC;
+  }
+
+  [class*='col-'] > p {
+     background-color: #FFC2C2; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
+
+
+
+}
+

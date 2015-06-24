@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href=""> <!-- icon for title tab-->
+    <title>NYC Dreams Of Sushi</title>
+    <link rel="stylesheet" type="text/css" href="main.css"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navigation">
+    <div class="navbar">
+      <div class="navbar-header">
+        <a href="">NYC Dreams of Sushi</a>
+      </div>
+      <div class="navbar-list">
+        <ul>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Sushipedia</a></li>
+          <li><a href="#">Salmon</a></li>
+          <li><a href="#">Yellowtail</a></li>
+          <li><a href="#">Monkfish</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Restaurants Collection -->
+  <div id="restaurantsCollection">
+    <!-- <div class="testDiv"></div> -->
+
+
+    <div class="grid-container outline">
+      <div class="row">
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div>
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+          <div class="col-1"><p>col-1</p></div> 
+<!--       </div> 
+      <div class="row">
+          <div class="col-2"><p>col-2</p></div> 
+          <div class="col-2"><p>col-2</p></div> 
+          <div class="col-2"><p>col-2</p></div> 
+      </div> 
+      <div class="row">
+          <div class="col-3"><p>col-3</p></div> 
+          <div class="col-3"><p>col-3</p></div> 
+      </div>  -->
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+
+  <script type="text/javascript">
+
+    $.getJSON('yelp_data.json').then(function (yelp_data) {
+
+      var response = yelp_data;
+
+      console.log(response);
+
+      var length = response.businesses.length; 
+
+      for (var i = 0; i < length; i++) {
+
+        // console.log(response.businesses[i].url); // url
+
+        // console.log(response.businesses[i].image_url); // image_url
+
+        // console.log(response.businesses[i].name); //name
+
+        // console.log(response.businesses[i].rating_img_url); // rating image
+
+        // console.log(response.businesses[i].location.neighborhoods[0]); // neighborhoods, maybe not as important
+
+        // console.log(response.businesses[i].location.display_address); // display_address
+
+        console.log(response.businesses[i].display_phone);
+
+      };
+
+      // var url = response.b
+
+      
+
+      // //url
+
+      // console.log(response.businesses.length);
+
+
+      //image_url
+
+      //rating_img_url
+
+      // document.write('<p style="margin-top: 100px;">' + response.businesses[16].id + '</p>');
+
+
+
+
+    });
+
+  </script>
+
+</body>
+</html>
