@@ -7,6 +7,7 @@
     <link rel="icon" href=""> <!-- icon for title tab-->
     <title>NYC Dreams Of Sushi</title>
     <link rel="stylesheet" type="text/css" href="main.css"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -28,43 +29,12 @@
     </div>
   </nav>
 
+  <!-- Header Background -->
+  <img class="header-background" src="nyc-new-york-city-1920x1080.jpg"/>
+
   <!-- Restaurants Collection -->
   <div id="restaurantsCollection">
-    <!-- <div class="testDiv"></div> -->
-
-
-    <div class="grid-container outline">
-      <div class="row">
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div>
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-          <div class="col-1"><p>col-1</p></div> 
-<!--       </div> 
-      <div class="row">
-          <div class="col-2"><p>col-2</p></div> 
-          <div class="col-2"><p>col-2</p></div> 
-          <div class="col-2"><p>col-2</p></div> 
-      </div> 
-      <div class="row">
-          <div class="col-3"><p>col-3</p></div> 
-          <div class="col-3"><p>col-3</p></div> 
-      </div>  -->
-    </div>
-
-
-
-
-
-
-
+    <div class="restaurantsContainer"></div>
   </div>
 
   <!-- Footer -->
@@ -84,6 +54,19 @@
 
       for (var i = 0; i < length; i++) {
 
+        $('.restaurantsContainer').append(
+          '<a href="' + response.businesses[i].url + '">' 
+            + '<div class="collection">'
+              + '<img width="300px" height="300px" src="' + response.businesses[i].image_url + '">'
+              + '<h4>' + response.businesses[i].name + '</h4>' 
+              + '<img class="rating_img" src="' + response.businesses[i].rating_img_url + '">'
+              + '<p>' + response.businesses[i].location.display_address[0] + '</p>'
+              + '<p>' + response.businesses[i].location.display_address[1] + '</p>'
+              + '<p>' + response.businesses[i].location.display_address[2] + '</p>'
+              + '<p>' + response.businesses[i].display_phone + '</p>'
+              + '<i class="fa fa-heart-o fa-lg"></i>'
+          + '</a>');
+
         // console.log(response.businesses[i].url); // url
 
         // console.log(response.businesses[i].image_url); // image_url
@@ -96,7 +79,7 @@
 
         // console.log(response.businesses[i].location.display_address); // display_address
 
-        console.log(response.businesses[i].display_phone);
+        // console.log(response.businesses[i].display_phone);
 
       };
 

@@ -1,5 +1,5 @@
 html {
-  background: grey no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.2) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,18 +9,23 @@ body {
   margin: 0;
   padding: 0; }
 
-#navigation {
-  position: fixed;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+.header-background {
   width: 100%;
-  padding: 20px; }
+  min-width: 1280px; }
+
+#navigation {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 20px 0; }
   #navigation .navbar {
-    margin: 0;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 0; }
     #navigation .navbar .navbar-header {
       float: left;
-      padding-right: 10px; }
+      padding: 0 20px 0 10px; }
       #navigation .navbar .navbar-header a {
         text-decoration: none;
         color: white;
@@ -33,35 +38,33 @@ body {
       #navigation .navbar .navbar-list ul li {
         float: left;
         margin: 0;
-        padding: 0 10px 0 0; }
+        padding: 0 20px 0 0; }
         #navigation .navbar .navbar-list ul li a {
           text-decoration: none;
           color: white;
           font-family: sans-serif; }
 
-#restaurantsCollection .grid-container {
-  position: fixed;
-  top: 300px;
-  width: 100%;
-  max-width: 1280px; }
-#restaurantsCollection .grid-container * {
-  box-sizing: border-box; }
-#restaurantsCollection .row:before, #restaurantsCollection .row:after {
-  content: "";
-  display: table;
-  clear: both; }
-#restaurantsCollection [class*='col-'] {
-  float: left;
-  min-height: 1px;
-  width: 25%;
-  /* spaces in grid */
-  padding: 5px;
-  background-color: #FFDCDC; }
-#restaurantsCollection [class*='col-'] > p {
-  background-color: #FFC2C2;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white; }
+#restaurantsCollection {
+  position: absolute;
+  top: 550px;
+  width: 100%; }
+  #restaurantsCollection .restaurantsContainer {
+    max-width: 1280px;
+    margin: 0 auto; }
+    #restaurantsCollection .restaurantsContainer .collection {
+      position: relative;
+      margin: 10px;
+      display: block;
+      background-color: whitesmoke;
+      float: left;
+      line-height: 1px; }
+      #restaurantsCollection .restaurantsContainer .collection h4, #restaurantsCollection .restaurantsContainer .collection p {
+        margin-left: 10px; }
+      #restaurantsCollection .restaurantsContainer .collection .rating_img {
+        margin-left: 10px; }
+      #restaurantsCollection .restaurantsContainer .collection .fa.fa-heart-o.fa-lg {
+        position: absolute;
+        bottom: 10px;
+        right: 10px; }
 
 /*# sourceMappingURL=main.css.map */
