@@ -62,15 +62,13 @@ body {
 }
 
 #restaurantsCollection {
-
   position: absolute;
   top: 720px;
   width: 100%;
 
   .restaurantsContainer {
     max-width: 1280px;
-    margin:0 auto;
-    // float: left;
+    margin: 0 auto;
 
     .collection {
       position: relative;
@@ -79,6 +77,11 @@ body {
       background-color: rgb(245, 245, 245);
       float: left;
       line-height: 1px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
 
       h4, p {
         margin-left: 10px;

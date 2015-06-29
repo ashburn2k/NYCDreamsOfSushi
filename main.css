@@ -58,6 +58,9 @@ body {
       background-color: whitesmoke;
       float: left;
       line-height: 1px; }
+      #restaurantsCollection .restaurantsContainer .collection a {
+        text-decoration: none;
+        color: black; }
       #restaurantsCollection .restaurantsContainer .collection h4, #restaurantsCollection .restaurantsContainer .collection p {
         margin-left: 10px; }
       #restaurantsCollection .restaurantsContainer .collection .rating_img {
