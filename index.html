@@ -64,7 +64,10 @@
               + '<p>' + response.businesses[i].location.display_address[1] + '</p>'
               + '<p>' + response.businesses[i].location.display_address[2] + '</p>'
               + '<p>' + response.businesses[i].display_phone + '</p>'
-              + '<i class="fa fa-heart-o fa-lg"></i>'
+              + '<span class="change-icon">'
+                + '<i class="fa fa-heart-o fa-lg"></i>'
+                + '<i class="fa fa-heart fa-lg"></i>'
+              + '</span>'
           + '</a>');
 
         // console.log(response.businesses[i].url); // url

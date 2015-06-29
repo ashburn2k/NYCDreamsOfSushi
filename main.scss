@@ -64,7 +64,7 @@ body {
 #restaurantsCollection {
 
   position: absolute;
-  top: 550px;
+  top: 720px;
   width: 100%;
 
   .restaurantsContainer {
@@ -92,6 +92,24 @@ body {
         position: absolute;
         bottom: 10px;
         right: 10px;
+      }
+
+      .fa.fa-heart.fa-lg {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .change-icon > .fa:nth-child(2) {
+        display: none;
+      }
+
+      .change-icon:hover > .fa:nth-child(1) {
+        display: none;
+      }
+
+      .change-icon:hover > .fa:nth-child(2) {
+        display: inherit;
       }
     }
   }
