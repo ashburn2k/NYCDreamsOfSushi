@@ -29,21 +29,23 @@
   <!-- Header Background -->
   <img class="header-background" src="nyc-new-york-city-1920x1080.jpg"/>
 
-  <div id="introduction">
-    <div class="container">
-      <h1>Dreams of Sushi</h1>
-      <p>Search for a restaurant nearby you</p>
-      <form>
-        <label>Search</label>
-        <input id="textinput" name="textinput" type="text" placeholder="placeholder">
-      </form>
-    </div>
-  </div>
+  <section id="search">
 
-  <!-- Restaurants Collection -->
-  <div id="restaurantsCollection">
-    <div class="restaurantsContainer"></div>
-  </div>
+    <div id="introduction">
+      <div class="container">
+        <p>Search for a restaurant nearby you</p>
+        <form>
+          <input id="textinput" name="textinput" type="text" placeholder="Zip Code">
+        </form>
+      </div>
+    </div>
+
+    <!-- Restaurants Collection -->
+    <div id="restaurantsCollection">
+      <div class="restaurantsContainer"></div>
+    </div>
+
+  </section>
 
   <!-- Footer -->
   <div id="footer"></div>
@@ -78,39 +80,7 @@
               + '</span>'
           + '</a>');
 
-        // console.log(response.businesses[i].url); // url
-
-        // console.log(response.businesses[i].image_url); // image_url
-
-        // console.log(response.businesses[i].name); //name
-
-        // console.log(response.businesses[i].rating_img_url); // rating image
-
-        // console.log(response.businesses[i].location.neighborhoods[0]); // neighborhoods, maybe not as important
-
-        // console.log(response.businesses[i].location.display_address); // display_address
-
-        // console.log(response.businesses[i].display_phone);
-
       };
-
-      // var url = response.b
-
-      
-
-      // //url
-
-      // console.log(response.businesses.length);
-
-
-      //image_url
-
-      //rating_img_url
-
-      // document.write('<p style="margin-top: 100px;">' + response.businesses[16].id + '</p>');
-
-
-
 
     });
 
