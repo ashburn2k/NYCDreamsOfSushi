@@ -17,8 +17,8 @@ body {
 
 #introduction {
   position: absolute;
-  width: 100%;
   top: 300px;
+  width: 100%;
 
   .container {
     background-color: rgba(0,0,0,0.8);
@@ -26,9 +26,8 @@ body {
     margin: 0 auto;
     padding: 0;
 
-    h1 {
+    h1, p, label {
       color: white;
-      text-align: center;
     }
   }
 }
