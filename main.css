@@ -2,7 +2,7 @@
   font-family: sans-serif; }
 
 html {
-  background: rgba(0, 0, 0, 0.3) no-repeat center center fixed;
+  background: black no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,7 +48,7 @@ body {
 
 #search {
   position: absolute;
-  top: 300px;
+  top: 500px;
   width: 100%; }
   #search #introduction .container {
     background-color: rgba(0, 0, 0, 0.8);

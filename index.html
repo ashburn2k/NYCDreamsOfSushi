@@ -65,9 +65,10 @@
       for (var i = 0; i < length; i++) {
 
         $('.restaurantsContainer').append(
-          '<a href="' + response.businesses[i].url + '">' 
-            + '<div class="collection">'
-              + '<img width="300px" height="300px" src="' + response.businesses[i].image_url + '">'
+            '<div class="collection">'
+              + '<a href="' + response.businesses[i].url + '">'
+                + '<img width="300px" height="300px" src="' + response.businesses[i].image_url + '">'
+              + '</a>'
               + '<h4>' + response.businesses[i].name + '</h4>' 
               + '<img class="rating_img" src="' + response.businesses[i].rating_img_url + '">'
               + '<p>' + response.businesses[i].location.display_address[0] + '</p>'
@@ -78,7 +79,7 @@
                 + '<i class="fa fa-heart-o fa-lg"></i>'
                 + '<i class="fa fa-heart fa-lg"></i>'
               + '</span>'
-          + '</a>');
+          + '</div>');
 
       };
 
