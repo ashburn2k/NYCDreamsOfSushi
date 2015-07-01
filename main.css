@@ -10,8 +10,20 @@ body {
   padding: 0; }
 
 .header-background {
+  width: 100%; }
+
+#introduction {
+  position: absolute;
   width: 100%;
-  min-width: 1280px; }
+  top: 300px; }
+  #introduction .container {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0; }
+    #introduction .container h1 {
+      color: white;
+      text-align: center; }
 
 #navigation {
   position: absolute;
@@ -50,7 +62,8 @@ body {
   width: 100%; }
   #restaurantsCollection .restaurantsContainer {
     max-width: 1280px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0; }
     #restaurantsCollection .restaurantsContainer .collection {
       position: relative;
       margin: 10px;
