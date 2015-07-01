@@ -77,8 +77,23 @@ body {
         margin: 0;
         padding: 0 10px 0 0; }
       #search #introduction .container .sorting .rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
         float: left;
-        background-color: white; }
+        color: white; }
+      #search #introduction .container .sorting .rating > span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em; }
+      #search #introduction .container .sorting .rating > span:hover,
+      #search #introduction .container .sorting .rating > span:hover ~ span {
+        color: transparent; }
+      #search #introduction .container .sorting .rating > span:hover:before,
+      #search #introduction .container .sorting .rating > span:hover ~ span:before {
+        content: "\2605";
+        position: absolute;
+        left: 0;
+        color: gold; }
   #search #restaurantsCollection .restaurantsContainer {
     max-width: 1280px;
     margin: 0 auto;

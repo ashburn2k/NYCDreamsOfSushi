@@ -108,10 +108,28 @@ body {
           margin: 0;
           padding: 0 10px 0 0;
         }
-      
+
         .rating {
+          unicode-bidi: bidi-override;
+          direction: rtl;
           float: left;
-          background-color: white;
+          color: white;
+        }
+        .rating > span {
+          display: inline-block;
+          position: relative;
+          width: 1.1em;
+        }
+        .rating > span:hover,
+        .rating > span:hover ~ span {
+          color: transparent;
+        }
+        .rating > span:hover:before,
+        .rating > span:hover ~ span:before {
+           content: "\2605";
+           position: absolute;
+           left: 0; 
+           color: gold;
         }
       }
 
