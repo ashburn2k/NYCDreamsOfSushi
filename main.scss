@@ -197,8 +197,18 @@ body {
         }
       }
     }
-
   }
+}
 
+#favorites {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+
+  .favoritesContainer {
+    background-color: red;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }
 

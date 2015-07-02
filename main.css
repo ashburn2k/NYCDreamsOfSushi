@@ -134,4 +134,13 @@ body {
       #search #restaurantsCollection .restaurantsContainer .collection .change-icon:hover > .fa:nth-child(2) {
         display: inherit; }
 
+#favorites {
+  position: absolute;
+  top: 100px;
+  width: 100%; }
+  #favorites .favoritesContainer {
+    background-color: red;
+    max-width: 1280px;
+    margin: 0 auto; }
+
 /*# sourceMappingURL=main.css.map */
