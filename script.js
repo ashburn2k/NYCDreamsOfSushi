@@ -9,7 +9,7 @@ $.getJSON('yelp_data.json').then(function (yelp_data) {
   for (var i = 0; i < length; i++) {
 
     $('.restaurantsContainer').append(
-        '<div class="collection">'
+        '<div id="' + i + '" class="collection">'
           + '<a href="' + response.businesses[i].url + '">'
             + '<img width="300px" height="300px" src="' + response.businesses[i].image_url + '">'
           + '</a>'
@@ -28,3 +28,77 @@ $.getJSON('yelp_data.json').then(function (yelp_data) {
   };
 
 });
+
+// Favorites
+
+var FavoritesArr = [];
+
+
+
+// $("h2").on('click', 'p.test', function() {
+//     alert('you clicked a p.test element');
+// });
+
+$('.restaurantsContainer').on('click', '.change-icon', function() {
+  console.log("Hello!");
+});
+
+
+
+// $('.collection').click( function () {
+
+//   // console.log($this.parent().parent());
+
+//   console.log("is this responding?");
+
+// });
+
+
+
+// $('change-icon').on('click', function () {
+
+//   console.log('hello!!!!');
+
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  $(function(){
+    $('#div16').click({ param1: '#scrollspan8', param2: 'click ', 
+                           param3: '**JavaScript event triggered**  ' }, addText2);
+
+    function addText2(event) {
+      $(event.data.param1).append(event.data.param2 + ''<code>' + event.data.param3+ ''</code>');
+    }
+  });
+// */
+
+
+// var faveList = [];
+
+// $('fa.fa-heart.fa-lg').click()
+
+
+
+
+
+
+// $('favoritesContainer').append();
