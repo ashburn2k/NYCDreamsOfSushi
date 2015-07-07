@@ -27,7 +27,8 @@ $(document).ready(function() {
         + '</div>');
 
       $(restaurant).on('click', '.change-icon', function(){
-        console.log($(this).parent()[0].id);
+        favoritesArray.push($(this).parent()[0].id);
+        console.log(favoritesArray);
       });
 
       $('.restaurantsContainer').append(restaurant);
@@ -36,9 +37,6 @@ $(document).ready(function() {
 
   });
 
-  // Favorites
-
-  var FavoritesArr = [];
-
+  var favoritesArray = new Array();
 
 });
