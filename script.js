@@ -27,16 +27,23 @@ $(document).ready(function() {
         + '</div>');
 
       $(restaurant).on('click', '.change-icon', function(){
-        favoritesArray.push($(this).parent()[0].id);
-        console.log(favoritesArray);
+        // favoritesArray.push($(this).parent()[0].id);
+        // console.log(favoritesArray);
       });
 
       $('.restaurantsContainer').append(restaurant);
 
     };
 
-  });
+    // var favoritesArray = new Array();
 
-  var favoritesArray = new Array();
+    // mock array
+    var favoritesArray = ["3", "2", "1", "0"];
+
+    $.each(favoritesArray, function(index, value) {
+      console.log(response.businesses[value].name);
+    });
+
+  });
 
 });
