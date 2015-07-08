@@ -36,7 +36,7 @@ body {
       margin: 0;
       padding: 0; }
       #navigation .navbar .navbar-list ul li {
-        float: left;
+        float: right;
         margin: 0;
         padding: 0 20px 0 0; }
         #navigation .navbar .navbar-list ul li a {
