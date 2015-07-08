@@ -45,6 +45,19 @@ body {
           font-family: Courier;
           font-size: 17px; }
 
+.title {
+  position: absolute;
+  top: 235px;
+  width: 100%; }
+  .title h1 {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: Courier;
+    text-shadow: 10px 10px 5px black;
+    font-size: 50px; }
+
 .header-background {
   width: 100%; }
 
