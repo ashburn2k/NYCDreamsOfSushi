@@ -39,7 +39,7 @@ $(document).ready(function() {
     // var favoritesArray = new Array();
 
     // mock array
-    var favoritesArray = ["3", "2", "1", "0"];
+    var favoritesArray = ["34", "24", "18", "39", "10", "15", "22", "30"];
 
     $.each(favoritesArray, function(index, value) {
       // console.log(response.businesses[value].name);
