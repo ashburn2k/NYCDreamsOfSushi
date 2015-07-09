@@ -13,7 +13,8 @@ body {
   padding: 0; }
 
 #navigation {
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   top: 0;
   background-color: black;
   width: 100%;
@@ -144,18 +145,19 @@ body {
 
 #favorites {
   position: absolute;
-  top: 70px;
+  top: 100px;
   width: 100%; }
   #favorites .header {
     max-width: 1280px;
-    margin: 15px auto;
-    padding: 10px;
+    margin: 0 auto 28px;
+    padding: 1px;
     line-height: 10px;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(0, 0, 0, 0.7); }
     #favorites .header p {
       text-align: center;
       font-size: 30px;
-      font-family: Verdana; }
+      font-family: Courier;
+      color: white; }
   #favorites .favoritesContainer {
     max-width: 1280px;
     margin: 0 auto; }
