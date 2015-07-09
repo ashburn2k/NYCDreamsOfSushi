@@ -26,9 +26,10 @@ $(document).ready(function() {
             + '</span>'
         + '</div>');
 
-      $(restaurant).on('click', '.change-icon', function(){
+      $(restaurant).on('click', '.fa-heart', function(){
         // favoritesArray.push($(this).parent()[0].id);
         // console.log(favoritesArray);
+        console.log("successfully added!");
       });
 
       $('.restaurantsContainer').append(restaurant);
@@ -58,6 +59,12 @@ $(document).ready(function() {
               + '<i class="fa fa-heart fa-lg"></i>'
             + '</span>'
         + '</div>');
+
+      $(favorite).on('click', '.fa-heart-o', function(){
+        // favoritesArray.push($(this).parent()[0].id);
+        // console.log(favoritesArray);
+        // console.log("successfully removed!");
+      });
 
       $('.favoritesContainer').append(favorite);
 
