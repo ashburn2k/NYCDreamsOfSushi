@@ -142,6 +142,9 @@ body {
         display: none; }
       #search #restaurantsCollection .restaurantsContainer .collection .change-icon:hover > .fa:nth-child(2) {
         display: inherit; }
+    #search #restaurantsCollection .restaurantsContainer .collection:hover {
+      -webkit-transform: scale(1.025);
+      box-shadow: 0 3px 25px #000; }
 
 #favorites {
   position: absolute;
