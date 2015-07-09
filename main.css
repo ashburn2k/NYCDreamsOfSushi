@@ -120,7 +120,8 @@ body {
       display: block;
       background-color: whitesmoke;
       float: left;
-      line-height: 1px; }
+      line-height: 1px;
+      transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.9); }
       #search #restaurantsCollection .restaurantsContainer .collection a {
         text-decoration: none;
         color: black; }
@@ -170,7 +171,8 @@ body {
       display: block;
       background-color: whitesmoke;
       float: left;
-      line-height: 1px; }
+      line-height: 1px;
+      transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.9); }
       #favorites .favoritesContainer .collection a {
         text-decoration: none;
         color: black; }
@@ -192,5 +194,8 @@ body {
         display: none; }
       #favorites .favoritesContainer .collection .change-icon:hover > .fa:nth-child(1) {
         display: inherit; }
+    #favorites .favoritesContainer .collection:hover {
+      -webkit-transform: scale(1.025);
+      box-shadow: 0 3px 25px #000; }
 
 /*# sourceMappingURL=main.css.map */
