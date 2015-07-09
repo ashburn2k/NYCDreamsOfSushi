@@ -14,7 +14,7 @@ body {
 
 #navigation {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   background-color: black;
   width: 100%;
@@ -48,6 +48,7 @@ body {
 
 .title {
   position: absolute;
+  z-index: 1;
   top: 235px;
   width: 100%; }
   .title h1 {
@@ -60,6 +61,7 @@ body {
     font-size: 50px; }
 
 .header-background {
+  position: fixed;
   width: 100%; }
 
 #search {
@@ -117,7 +119,7 @@ body {
     #search #restaurantsCollection .restaurantsContainer .collection {
       position: relative;
       margin: 10px;
-      display: block;
+      display: inline-block;
       background-color: whitesmoke;
       float: left;
       line-height: 1px;
