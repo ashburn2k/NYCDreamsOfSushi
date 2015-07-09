@@ -144,6 +144,7 @@ body {
       #search #restaurantsCollection .restaurantsContainer .collection .change-icon:hover > .fa:nth-child(2) {
         display: inherit; }
     #search #restaurantsCollection .restaurantsContainer .collection:hover {
+      -webkit-backface-visibility: hidden;
       -webkit-transform: scale(1.025);
       box-shadow: 0 3px 25px #000; }
 
@@ -195,6 +196,7 @@ body {
       #favorites .favoritesContainer .collection .change-icon:hover > .fa:nth-child(1) {
         display: inherit; }
     #favorites .favoritesContainer .collection:hover {
+      -webkit-backface-visibility: hidden;
       -webkit-transform: scale(1.025);
       box-shadow: 0 3px 25px #000; }
 
